@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/LoginPage";
 import Register from "./pages/RegisterPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Shop from "./pages/Shop";
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -19,7 +21,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <Shop/>
     </div>
   );
 }
