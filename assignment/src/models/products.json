@@ -1,0 +1,297 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Basic T-Shirt",
+            "img": "https://example.com/images/tshirt1.jpg",
+            "price": 19.99,
+            "description": "A comfortable cotton t-shirt for everyday wear.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Red",
+                "Blue",
+                "Green"
+            ],
+            "quantity": 100,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "2",
+            "name": "Slim Fit Jeans",
+            "img": "https://example.com/images/jeans1.jpg",
+            "price": 49.99,
+            "description": "Stylish slim fit jeans made from high-quality denim.",
+            "size": [
+                "28",
+                "30",
+                "32",
+                "34",
+                "36"
+            ],
+            "color": [
+                "Black",
+                "Blue"
+            ],
+            "quantity": 50,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "3",
+            "name": "Running Shoes",
+            "img": "https://example.com/images/shoes1.jpg",
+            "price": 89.99,
+            "description": "Lightweight running shoes with excellent cushioning.",
+            "size": [
+                "7",
+                "8",
+                "9",
+                "10",
+                "11"
+            ],
+            "color": [
+                "White",
+                "Black",
+                "Gray"
+            ],
+            "quantity": 30,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "4",
+            "name": "Leather Jacket",
+            "img": "https://example.com/images/jacket1.jpg",
+            "price": 129.99,
+            "description": "A premium leather jacket with a modern fit.",
+            "size": [
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 15,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "5",
+            "name": "Classic Watch",
+            "img": "https://example.com/images/watch1.jpg",
+            "price": 199.99,
+            "description": "A timeless wristwatch with a stainless steel strap.",
+            "size": [],
+            "color": [
+                "Silver",
+                "Gold"
+            ],
+            "quantity": 25,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "6",
+            "name": "Sunglasses",
+            "img": "https://example.com/images/sunglasses1.jpg",
+            "price": 59.99,
+            "description": "Stylish sunglasses with UV protection lenses.",
+            "size": [],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 75,
+            "rating": 3.5,
+            "reviews": 100
+        },
+        {
+            "id": "7",
+            "name": "Denim Jacket",
+            "img": "https://example.com/images/jacket2.jpg",
+            "price": 79.99,
+            "description": "Classic denim jacket with a classic fit.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "White"
+            ],
+            "quantity": 10,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "8",
+            "name": "Leather Wallet",
+            "img": "https://example.com/images/wallet1.jpg",
+            "price": 29.99,
+            "description": "A classic leather wallet with multiple card slots.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Brown",
+                "Black"
+            ],
+            "quantity": 20,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "9",
+            "name": "Leather Backpack",
+            "img": "https://example.com/images/backpack1.jpg",
+            "price": 59.99,
+            "description": "A classic leather backpack with multiple compartments.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 5,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "10",
+            "name": "Leather Wallet",
+            "img": "https://example.com/images/wallet2.jpg",
+            "price": 29.99,
+            "description": "A classic leather wallet with multiple card slots.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Brown",
+                "Black"
+            ],
+            "quantity": 20,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "11",
+            "name": "Leather Backpack",
+            "img": "https://example.com/images/backpack2.jpg",
+            "price": 59.99,
+            "description": "A classic leather backpack with multiple compartments.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 5,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "12",
+            "name": "Leather Wallet",
+            "img": "https://example.com/images/wallet3.jpg",
+            "price": 29.99,
+            "description": "A classic leather wallet with multiple card slots.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Brown",
+                "Black"
+            ],
+            "quantity": 20,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "13",
+            "name": "Leather Backpack",
+            "img": "https://example.com/images/backpack3.jpg",
+            "price": 59.99,
+            "description": "A classic leather backpack with multiple compartments.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 5,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "14",
+            "name": "Leather Wallet",
+            "img": "https://example.com/images/wallet4.jpg",
+            "price": 29.99,
+            "description": "A classic leather wallet with multiple card slots.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Brown",
+                "Black"
+            ],
+            "quantity": 20,
+            "rating": 4.5,
+            "reviews": 10
+        },
+        {
+            "id": "15",
+            "name": "Leather Backpack",
+            "img": "https://example.com/images/backpack4.jpg",
+            "price": 59.99,
+            "description": "A classic leather backpack with multiple compartments.",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "color": [
+                "Black",
+                "Brown"
+            ],
+            "quantity": 5,
+            "rating": 4.5,
+            "reviews": 10
+        }
+    ]
+}

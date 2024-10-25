@@ -1,30 +1,18 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./pages/LoginPage";
-import Register from "./pages/RegisterPage";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Shop from "./pages/Shop";
-const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: "/register",
-    element: <Register />
-  }
-]
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Shopping from './pages/shopping';
 
-)
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      {/* <RouterProvider router={router} /> */}
-      <Shop/>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/shop" element={<Shopping />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

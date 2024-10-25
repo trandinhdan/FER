@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { regester } from '../services/userServices'
+import { regester } from '../../services/userServices'
 
 const Register = () => {
 
