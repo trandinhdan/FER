@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const jsonServerUrl = 'http://localhost:9999';
+const jsonServerUrl = 'http://localhost:8888';
 
 const login = async (username, password) => {
     const response = await axios.get(`${jsonServerUrl}/users?username=${username}&password=${password}`);

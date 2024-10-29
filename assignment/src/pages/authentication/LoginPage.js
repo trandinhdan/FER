@@ -14,8 +14,7 @@ const Login = () => {
         e.preventDefault();
         const response = await login(username, password);
         if (response.length > 0) {
-            localStorage.setItem('user', JSON.stringify(response))
-            console.log(response)
+            localStorage.setItem("token", username);
             window.location.href = '/home'
         }
         else {
