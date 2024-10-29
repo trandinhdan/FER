@@ -54,3 +54,4 @@ export const updateProductImages = async () => {
     throw error;
   }
 };
+

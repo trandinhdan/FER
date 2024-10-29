@@ -1,7 +1,11 @@
 import React from "react";
 import Rating from "../../component/Rating";
+import { addToCart } from "../../services/cartService";
 
 const ProductItem = ({ product }) => {
+  const token = localStorage.getItem("token");
+  const userData = JSON.parse(token);
+  console.log(product);
   return (
     <div className="col-lg-4 col-md-6 col-sm-6 pb-1">
       <div className="product-item bg-light mb-4">
@@ -12,8 +16,8 @@ const ProductItem = ({ product }) => {
             alt={product.name}
           />
           <div className="product-action">
-            <a className="btn btn-outline-dark btn-square" href="/#">
-              <i className="fa fa-shopping-cart"></i>
+            <a className="btn btn-outline-dark btn-square">
+              <i className="fa fa-shopping-cart" onClick={() => addToCart(userData.username, product)}></i>
             </a>
             <a className="btn btn-outline-dark btn-square" href="/#">
               <i className="far fa-heart"></i>
@@ -34,7 +38,7 @@ const ProductItem = ({ product }) => {
             <h5>${product.price.toFixed(2)}</h5>
           </div>
           <div className="d-flex align-items-center justify-content-center mb-1">
-            <Rating rating={product.rating} maxRating={5}/>
+            <Rating rating={product.rating} maxRating={5} />
           </div>
         </div>
       </div>

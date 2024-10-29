@@ -14,9 +14,10 @@ const Login = () => {
         e.preventDefault();
         const response = await login(username, password);
         if (response.length > 0) {
-            localStorage.setItem('user', JSON.stringify(response))
-            console.log(response)
-            window.location.href = '/home'
+            const token = response[0];
+            console.log(token);
+            localStorage.setItem("token", JSON.stringify(token));
+            // window.location.href = '/home'
         }
         else {
             alert('Invalid username or password')

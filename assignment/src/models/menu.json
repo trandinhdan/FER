@@ -1,0 +1,59 @@
+{
+    "categories": [
+      {
+        "name": "Dresses",
+        "subcategories": [
+          "Men's Dresses",
+          "Women's Dresses",
+          "Baby's Dresses"
+        ]
+      },
+      {
+        "name": "Shirts",
+        "subcategories": []
+      },
+      {
+        "name": "Jeans",
+        "subcategories": []
+      },
+      {
+        "name": "Swimwear",
+        "subcategories": []
+      },
+      {
+        "name": "Sleepwear",
+        "subcategories": []
+      },
+      {
+        "name": "Sportswear",
+        "subcategories": []
+      },
+      {
+        "name": "Jumpsuits",
+        "subcategories": []
+      },
+      {
+        "name": "Blazers",
+        "subcategories": []
+      },
+      {
+        "name": "Jackets",
+        "subcategories": []
+      },
+      {
+        "name": "Shoes",
+        "subcategories": []
+      }
+    ],
+    "pages": [
+      {
+        "name": "Shopping Cart",
+        "url": "cart.html"
+      },
+      {
+        "name": "Checkout",
+        "url": "checkout.html"
+      }
+    ]
+  }
+  
