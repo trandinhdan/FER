@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({ username }) => {
+const Header = ({ token }) => {
     const handleLogout = () => {
         localStorage.removeItem('token');
         window.location.reload();
@@ -18,9 +18,9 @@ const Header = ({ username }) => {
                 </div>
                 <div className="col-lg-6 text-center text-lg-right">
                     <div className="d-inline-flex align-items-center">
-                        {username ?
+                        {token ?
                             <div className="btn-group">
-                                <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{username}</button>
+                                <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{token.firstName + ' ' + token.lastName}</button>
                                 <ul className="dropdown-menu dropdown-menu-right">
                                     <li><button className="dropdown-item" type="button" onClick={handleLogout}>Logout</button></li>
                                 </ul>
@@ -28,8 +28,8 @@ const Header = ({ username }) => {
                             : <div className="btn-group">
                                 <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">My Account</button>
                                 <ul className="dropdown-menu dropdown-menu-right">
-                                    <li><button className="dropdown-item" type="button">Sign in</button></li>
-                                    <li><button className="dropdown-item" type="button">Sign up</button></li>
+                                    <li><a className="dropdown-item" type="button" href="/login">Sign in</a></li>
+                                    <li><a className="dropdown-item" type="button" href="/register">Sign up</a></li>
                                 </ul>
                             </div>}
                     </div>
@@ -47,7 +47,7 @@ const Header = ({ username }) => {
             </div>
             <div className="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
                 <div className="col-lg-4">
-                    <a href="" className="text-decoration-none">
+                    <a href="/" className="text-decoration-none">
                         <span className="h1 text-uppercase text-primary bg-dark px-2">Multi</span>
                         <span className="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
                     </a>
@@ -55,12 +55,12 @@ const Header = ({ username }) => {
                 <div className="col-lg-4 col-6 text-left">
                     <form action="">
                         <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Search for products" />
+                            {/* <input type="text" className="form-control" placeholder="Search for products" />
                             <div className="input-group-append">
                                 <span className="input-group-text bg-transparent text-primary">
                                     <i className="fa fa-search"></i>
                                 </span>
-                            </div>
+                            </div> */}
                         </div>
                     </form>
                 </div>

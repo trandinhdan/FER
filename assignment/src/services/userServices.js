@@ -7,11 +7,13 @@ const login = async (username, password) => {
     return response.data;
 };
 
-const regester = async (username, password) => {
-    if (await checkIfUserExists(username)) {
-        return null;
-    }
-    const response = await axios.post(`${jsonServerUrl}/users`, { username, password });
+const regester = async (user) => {
+    console.log(user);
+    // if (await checkIfUserExists(user.username)) {
+    //     console.log('User already exists');
+    //     return null;
+    // }
+    const response = await axios.post(`${jsonServerUrl}/users`, user);
     return response.data;
 };
 
@@ -21,9 +23,9 @@ const listAllUsers = async () => {
 };
 
 const checkIfUserExists = async (username) => {
+    console.log(username);
     const response = await axios.get(`${jsonServerUrl}/users?username=${username}`);
     return response.data;
 };
-
 
 export { login, regester, listAllUsers };
