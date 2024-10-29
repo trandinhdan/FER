@@ -1,7 +1,7 @@
 import React from "react";
 import Rating from "../../component/Rating";
 import { addToCart } from "../../services/cartService";
-
+import { Link } from 'react-router-dom';
 const ProductItem = ({ product }) => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
@@ -25,9 +25,11 @@ const ProductItem = ({ product }) => {
             <a className="btn btn-outline-dark btn-square" href="/#">
               <i className="fa fa-sync-alt"></i>
             </a>
-            <a className="btn btn-outline-dark btn-square" href="/#">
+            {/* Sử dụng Link để điều hướng đến ShopDetail với id của sản phẩm */}
+            <Link to={`/shopdetail/${product.id}`} className="btn btn-outline-dark btn-square">
               <i className="fa fa-search"></i>
-            </a>
+            </Link>
+
           </div>
         </div>
         <div className="text-center py-4">

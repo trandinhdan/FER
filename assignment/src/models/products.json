@@ -6,6 +6,13 @@
             "img": "https://example.com/images/tshirt1.jpg",
             "price": 19.99,
             "description": "A comfortable cotton t-shirt for everyday wear.",
+            "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
+            "additionalInformation": {
+              "Material": "100% Organic Cotton",
+              "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
+              "Origin": "Made in the USA",
+              "Fit": "Regular fit"
+            },
             "size": [
                 "S",
                 "M",
@@ -27,6 +34,13 @@
             "img": "https://example.com/images/jeans1.jpg",
             "price": 49.99,
             "description": "Stylish slim fit jeans made from high-quality denim.",
+            "productDescription": "These Slim Fit Jeans are tailored with high-quality denim and a touch of stretch to provide flexibility without compromising on the sleek look. They complement all body types and are designed for comfort, style, and durability.",
+            "additionalInformation": {
+              "Material": "98% Cotton, 2% Elastane",
+              "Care Instructions": "Machine wash cold with similar colors, avoid bleach",
+              "Origin": "Imported from Japan",
+              "Fit": "Slim fit"
+            },
             "size": [
                 "28",
                 "30",
@@ -48,6 +62,13 @@
             "img": "https://example.com/images/shoes1.jpg",
             "price": 89.99,
             "description": "Lightweight running shoes with excellent cushioning.",
+            "productDescription": "Engineered for runners, these shoes feature lightweight cushioning and a breathable upper to keep your feet cool and supported. Perfect for both long runs and casual wear, they bring style and comfort to your stride.",
+            "additionalInformation": {
+              "Material": "Mesh and synthetic upper, rubber sole",
+              "Care Instructions": "Spot clean only with mild soap",
+              "Origin": "Made in Vietnam",
+              "Performance": "High impact support"
+            },
             "size": [
                 "7",
                 "8",
@@ -70,6 +91,13 @@
             "img": "https://example.com/images/jacket1.jpg",
             "price": 129.99,
             "description": "A premium leather jacket with a modern fit.",
+            "productDescription": "Crafted from premium leather, this jacket adds a timeless edge to your wardrobe. With a modern, slim fit, it pairs well with both casual and formal outfits, providing a versatile option for all occasions.",
+            "additionalInformation": {
+              "Material": "100% Genuine Leather",
+              "Care Instructions": "Professional leather clean only",
+              "Origin": "Handcrafted in Italy",
+              "Fit": "Slim fit"
+            },
             "size": [
                 "M",
                 "L",
@@ -89,6 +117,13 @@
             "img": "https://example.com/images/watch1.jpg",
             "price": 199.99,
             "description": "A timeless wristwatch with a stainless steel strap.",
+            "productDescription": "This Classic Watch combines functionality with timeless style. Featuring a stainless steel strap and quartz movement, it is the ideal accessory for everyday elegance.",
+            "additionalInformation": {
+              "Material": "Stainless Steel",
+              "Water Resistance": "Up to 50 meters",
+              "Origin": "Swiss-made",
+              "Warranty": "2 years international warranty"
+            },
             "size": [],
             "color": [
                 "Silver",
@@ -104,6 +139,12 @@
             "img": "https://example.com/images/sunglasses1.jpg",
             "price": 59.99,
             "description": "Stylish sunglasses with UV protection lenses.",
+            "additionalInformation": {
+                "Material": "Plastic frame, UV-protection lenses",
+                "Care Instructions": "Wipe clean with a soft cloth",
+                "Origin": "Made in Italy",
+                "Lens Type": "Polarized"
+              },
             "size": [],
             "color": [
                 "Black",
@@ -119,6 +160,13 @@
             "img": "https://example.com/images/jacket2.jpg",
             "price": 79.99,
             "description": "Classic denim jacket with a classic fit.",
+            "productDescription": "A timeless denim jacket that adds a layer of style to any outfit. Made with durable denim and a soft inner lining, it is suitable for year-round wear and easy layering.",
+            "additionalInformation": {
+              "Material": "100% Cotton Denim",
+              "Care Instructions": "Machine wash warm with like colors",
+              "Origin": "Made in USA",
+              "Fit": "Regular fit"
+            },
             "size": [
                 "S",
                 "M",
@@ -139,6 +187,13 @@
             "img": "https://example.com/images/wallet1.jpg",
             "price": 29.99,
             "description": "A classic leather wallet with multiple card slots.",
+            "productDescription": "This leather wallet offers a refined, slim profile with multiple card slots and a durable build. Ideal for those who prefer a minimalist yet functional design.",
+            "additionalInformation": {
+              "Material": "Genuine Leather",
+              "Care Instructions": "Wipe clean with a damp cloth",
+              "Origin": "Handcrafted in Spain",
+              "Card Slots": "6"
+            },
             "size": [],
             "color": [
                 "Brown",
@@ -154,6 +209,13 @@
             "img": "https://example.com/images/backpack1.jpg",
             "price": 59.99,
             "description": "A classic leather backpack with multiple compartments.",
+            "productDescription": "An elegant leather backpack that combines style with functionality. With multiple compartments, it’s perfect for organizing daily essentials and adds a sophisticated touch to your look.",
+            "additionalInformation": {
+              "Material": "Genuine Leather",
+              "Care Instructions": "Condition leather every 3 months",
+              "Origin": "Handcrafted in Italy",
+              "Capacity": "15 liters"
+            },
             "size": [],
             "color": [
                 "Black",
@@ -169,6 +231,13 @@
             "img": "https://example.com/images/shirt1.jpg",
             "price": 24.99,
             "description": "A light and comfortable shirt perfect for casual wear.",
+            "productDescription": "This minimalist leather wallet is designed to fit easily into your pocket while holding all essential cards and cash. Durable and elegant, it’s a must-have accessory for everyday use.",
+            "additionalInformation": {
+              "Material": "100% Full-Grain Leather",
+              "Care Instructions": "Apply leather conditioner to maintain suppleness",
+              "Origin": "Handcrafted in France",
+              "Card Slots": "4"
+            },
             "size": [
                 "M",
                 "L"
@@ -187,6 +256,13 @@
             "img": "https://example.com/images/backpack2.jpg",
             "price": 59.99,
             "description": "A classic leather backpack with multiple compartments.",
+            "productDescription": "A versatile leather backpack with classic styling. Ideal for both professional and casual settings, it is built to last and offers ample storage for daily essentials.",
+            "additionalInformation": {
+              "Material": "100% Full-Grain Leather",
+              "Care Instructions": "Avoid exposure to water; apply conditioner periodically",
+              "Origin": "Made in Portugal",
+              "Capacity": "20 liters"
+            },
             "size": [
                 "S",
                 "M",
@@ -207,6 +283,13 @@
             "img": "https://example.com/images/wallet3.jpg",
             "price": 29.99,
             "description": "A classic leather wallet with multiple card slots.",
+            "productDescription": "Designed with both form and function in mind, this leather wallet is perfect for those who value simplicity without sacrificing style. It’s compact, durable, and refined.",
+            "additionalInformation": {
+              "Material": "Vegetable-Tanned Leather",
+              "Care Instructions": "Wipe clean with dry cloth, avoid direct sunlight",
+              "Origin": "Made in Mexico",
+              "Card Slots": "8"
+            },
             "size": [
                 "S",
                 "M",
@@ -227,6 +310,13 @@
             "img": "https://example.com/images/backpack3.jpg",
             "price": 59.99,
             "description": "A classic leather backpack with multiple compartments.",
+            "productDescription": "This premium leather backpack combines luxury with practicality, featuring compartments for tech and other essentials. Perfect for commuters and travelers alike.",
+            "additionalInformation": {
+              "Material": "Italian Leather",
+              "Care Instructions": "Apply leather conditioner monthly",
+              "Origin": "Made in Italy",
+              "Capacity": "18 liters"
+            },
             "size": [
                 "S",
                 "M",
@@ -247,6 +337,13 @@
             "img": "https://example.com/images/wallet4.jpg",
             "price": 29.99,
             "description": "A classic leather wallet with multiple card slots.",
+            "productDescription": "A sleek, compact leather wallet for the modern minimalist. With ample card slots and a secure design, it fits comfortably in any pocket without added bulk.",
+            "additionalInformation": {
+              "Material": "Top-Grain Leather",
+              "Care Instructions": "Use leather protector spray",
+              "Origin": "Handmade in Germany",
+              "Card Slots": "10"
+            },
             "size": [
                 "S",
                 "M",
@@ -267,6 +364,13 @@
             "img": "https://example.com/images/backpack4.jpg",
             "price": 59.99,
             "description": "A classic leather backpack with multiple compartments.",
+            "productDescription": "Made from high-quality leather, this backpack is perfect for carrying essentials with a touch of sophistication. Features padded shoulder straps for added comfort.",
+            "additionalInformation": {
+              "Material": "Genuine Cowhide Leather",
+              "Care Instructions": "Spot clean with leather cleaner",
+              "Origin": "Made in Argentina",
+              "Capacity": "22 liters"
+            },
             "size": [
                 "S",
                 "M",

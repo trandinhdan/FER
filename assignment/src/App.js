@@ -11,6 +11,7 @@ import Login from './pages/authentication/LoginPage';
 import Register from './pages/authentication/RegisterPage';
 import Home from './pages/homepage/Home';
 import Checkout from './pages/shopping/checkout';
+import Cart1 from './pages/cart/Cart1';
 const App = () => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
@@ -27,6 +28,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shopdetail/:id" element={<ShopDetail />} />
+          <Route path="/cart" element={<Cart1 />} />
         </Routes>
       </div>
       <Footer />

@@ -72,386 +72,384 @@
       "img": "https://example.com/images/tshirt1.jpg",
       "price": 19.99,
       "description": "A comfortable cotton t-shirt for everyday wear.",
+      "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
+      "additionalInformation": {
+        "Material": "100% Organic Cotton",
+        "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
+        "Origin": "Made in the USA",
+        "Fit": "Regular fit"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Red",
-        "Blue",
-        "Green"
+          "Red",
+          "Blue",
+          "Green"
       ],
       "quantity": 100,
-      "rating": 4.5,
+      "rating": 3,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "2",
       "name": "Slim Fit Jeans",
       "img": "https://example.com/images/jeans1.jpg",
       "price": 49.99,
       "description": "Stylish slim fit jeans made from high-quality denim.",
+      "productDescription": "These Slim Fit Jeans are tailored with high-quality denim and a touch of stretch to provide flexibility without compromising on the sleek look. They complement all body types and are designed for comfort, style, and durability.",
+      "additionalInformation": {
+        "Material": "98% Cotton, 2% Elastane",
+        "Care Instructions": "Machine wash cold with similar colors, avoid bleach",
+        "Origin": "Imported from Japan",
+        "Fit": "Slim fit"
+      },
       "size": [
-        "28",
-        "30",
-        "32",
-        "34",
-        "36"
+          "28",
+          "30",
+          "32",
+          "34",
+          "36"
       ],
       "color": [
-        "Black",
-        "Blue"
+          "Black",
+          "Blue"
       ],
       "quantity": 50,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "3",
       "name": "Running Shoes",
       "img": "https://example.com/images/shoes1.jpg",
       "price": 89.99,
       "description": "Lightweight running shoes with excellent cushioning.",
+      "productDescription": "Engineered for runners, these shoes feature lightweight cushioning and a breathable upper to keep your feet cool and supported. Perfect for both long runs and casual wear, they bring style and comfort to your stride.",
+      "additionalInformation": {
+        "Material": "Mesh and synthetic upper, rubber sole",
+        "Care Instructions": "Spot clean only with mild soap",
+        "Origin": "Made in Vietnam",
+        "Performance": "High impact support"
+      },
       "size": [
-        "7",
-        "8",
-        "9",
-        "10",
-        "11"
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
       ],
       "color": [
-        "White",
-        "Black",
-        "Gray"
+          "White",
+          "Black",
+          "Gray"
       ],
       "quantity": 30,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "4",
       "name": "Leather Jacket",
       "img": "https://example.com/images/jacket1.jpg",
       "price": 129.99,
       "description": "A premium leather jacket with a modern fit.",
+      "productDescription": "Crafted from premium leather, this jacket adds a timeless edge to your wardrobe. With a modern, slim fit, it pairs well with both casual and formal outfits, providing a versatile option for all occasions.",
+      "additionalInformation": {
+        "Material": "100% Genuine Leather",
+        "Care Instructions": "Professional leather clean only",
+        "Origin": "Handcrafted in Italy",
+        "Fit": "Slim fit"
+      },
       "size": [
-        "M",
-        "L",
-        "XL"
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 15,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "5",
       "name": "Classic Watch",
       "img": "https://example.com/images/watch1.jpg",
       "price": 199.99,
       "description": "A timeless wristwatch with a stainless steel strap.",
+      "productDescription": "This Classic Watch combines functionality with timeless style. Featuring a stainless steel strap and quartz movement, it is the ideal accessory for everyday elegance.",
+      "additionalInformation": {
+        "Material": "Stainless Steel",
+        "Water Resistance": "Up to 50 meters",
+        "Origin": "Swiss-made",
+        "Warranty": "2 years international warranty"
+      },
       "size": [],
       "color": [
-        "Silver",
-        "Gold"
+          "Silver",
+          "Gold"
       ],
       "quantity": 25,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "6",
       "name": "Sunglasses",
       "img": "https://example.com/images/sunglasses1.jpg",
       "price": 59.99,
       "description": "Stylish sunglasses with UV protection lenses.",
+      "additionalInformation": {
+          "Material": "Plastic frame, UV-protection lenses",
+          "Care Instructions": "Wipe clean with a soft cloth",
+          "Origin": "Made in Italy",
+          "Lens Type": "Polarized"
+        },
       "size": [],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 75,
       "rating": 3.5,
       "reviews": 100
-    },
-    {
+  },
+  {
       "id": "7",
       "name": "Denim Jacket",
       "img": "https://example.com/images/jacket2.jpg",
       "price": 79.99,
       "description": "Classic denim jacket with a classic fit.",
+      "productDescription": "A timeless denim jacket that adds a layer of style to any outfit. Made with durable denim and a soft inner lining, it is suitable for year-round wear and easy layering.",
+      "additionalInformation": {
+        "Material": "100% Cotton Denim",
+        "Care Instructions": "Machine wash warm with like colors",
+        "Origin": "Made in USA",
+        "Fit": "Regular fit"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Black",
-        "White"
+          "Black",
+          "White"
       ],
       "quantity": 10,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "8",
       "name": "Leather Wallet",
       "img": "https://example.com/images/wallet1.jpg",
       "price": 29.99,
       "description": "A classic leather wallet with multiple card slots.",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
+      "productDescription": "This leather wallet offers a refined, slim profile with multiple card slots and a durable build. Ideal for those who prefer a minimalist yet functional design.",
+      "additionalInformation": {
+        "Material": "Genuine Leather",
+        "Care Instructions": "Wipe clean with a damp cloth",
+        "Origin": "Handcrafted in Spain",
+        "Card Slots": "6"
+      },
+      "size": [],
       "color": [
-        "Brown",
-        "Black"
+          "Brown",
+          "Black"
       ],
       "quantity": 20,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "9",
       "name": "Leather Backpack",
       "img": "https://example.com/images/backpack1.jpg",
       "price": 59.99,
       "description": "A classic leather backpack with multiple compartments.",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
+      "productDescription": "An elegant leather backpack that combines style with functionality. With multiple compartments, it’s perfect for organizing daily essentials and adds a sophisticated touch to your look.",
+      "additionalInformation": {
+        "Material": "Genuine Leather",
+        "Care Instructions": "Condition leather every 3 months",
+        "Origin": "Handcrafted in Italy",
+        "Capacity": "15 liters"
+      },
+      "size": [],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 5,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "10",
-      "name": "Leather Wallet",
-      "img": "https://example.com/images/wallet2.jpg",
-      "price": 29.99,
-      "description": "A classic leather wallet with multiple card slots.",
+      "name": "Casual Shirt",
+      "img": "https://example.com/images/shirt1.jpg",
+      "price": 24.99,
+      "description": "A light and comfortable shirt perfect for casual wear.",
+      "productDescription": "This minimalist leather wallet is designed to fit easily into your pocket while holding all essential cards and cash. Durable and elegant, it’s a must-have accessory for everyday use.",
+      "additionalInformation": {
+        "Material": "100% Full-Grain Leather",
+        "Care Instructions": "Apply leather conditioner to maintain suppleness",
+        "Origin": "Handcrafted in France",
+        "Card Slots": "4"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "M",
+          "L"
       ],
       "color": [
-        "Brown",
-        "Black"
+          "Blue",
+          "White"
       ],
-      "quantity": 20,
-      "rating": 4.5,
-      "reviews": 10
-    },
-    {
+      "quantity": 40,
+      "rating": 4,
+      "reviews": 25
+  },
+  {
       "id": "11",
       "name": "Leather Backpack",
       "img": "https://example.com/images/backpack2.jpg",
       "price": 59.99,
       "description": "A classic leather backpack with multiple compartments.",
+      "productDescription": "A versatile leather backpack with classic styling. Ideal for both professional and casual settings, it is built to last and offers ample storage for daily essentials.",
+      "additionalInformation": {
+        "Material": "100% Full-Grain Leather",
+        "Care Instructions": "Avoid exposure to water; apply conditioner periodically",
+        "Origin": "Made in Portugal",
+        "Capacity": "20 liters"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 5,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "12",
       "name": "Leather Wallet",
       "img": "https://example.com/images/wallet3.jpg",
       "price": 29.99,
       "description": "A classic leather wallet with multiple card slots.",
+      "productDescription": "Designed with both form and function in mind, this leather wallet is perfect for those who value simplicity without sacrificing style. It’s compact, durable, and refined.",
+      "additionalInformation": {
+        "Material": "Vegetable-Tanned Leather",
+        "Care Instructions": "Wipe clean with dry cloth, avoid direct sunlight",
+        "Origin": "Made in Mexico",
+        "Card Slots": "8"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Brown",
-        "Black"
+          "Brown",
+          "Black"
       ],
       "quantity": 20,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "13",
       "name": "Leather Backpack",
       "img": "https://example.com/images/backpack3.jpg",
       "price": 59.99,
       "description": "A classic leather backpack with multiple compartments.",
+      "productDescription": "This premium leather backpack combines luxury with practicality, featuring compartments for tech and other essentials. Perfect for commuters and travelers alike.",
+      "additionalInformation": {
+        "Material": "Italian Leather",
+        "Care Instructions": "Apply leather conditioner monthly",
+        "Origin": "Made in Italy",
+        "Capacity": "18 liters"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 5,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "14",
       "name": "Leather Wallet",
       "img": "https://example.com/images/wallet4.jpg",
       "price": 29.99,
       "description": "A classic leather wallet with multiple card slots.",
+      "productDescription": "A sleek, compact leather wallet for the modern minimalist. With ample card slots and a secure design, it fits comfortably in any pocket without added bulk.",
+      "additionalInformation": {
+        "Material": "Top-Grain Leather",
+        "Care Instructions": "Use leather protector spray",
+        "Origin": "Handmade in Germany",
+        "Card Slots": "10"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Brown",
-        "Black"
+          "Brown",
+          "Black"
       ],
       "quantity": 20,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
+  },
+  {
       "id": "15",
       "name": "Leather Backpack",
       "img": "https://example.com/images/backpack4.jpg",
       "price": 59.99,
       "description": "A classic leather backpack with multiple compartments.",
+      "productDescription": "Made from high-quality leather, this backpack is perfect for carrying essentials with a touch of sophistication. Features padded shoulder straps for added comfort.",
+      "additionalInformation": {
+        "Material": "Genuine Cowhide Leather",
+        "Care Instructions": "Spot clean with leather cleaner",
+        "Origin": "Made in Argentina",
+        "Capacity": "22 liters"
+      },
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+          "S",
+          "M",
+          "L",
+          "XL"
       ],
       "color": [
-        "Black",
-        "Brown"
+          "Black",
+          "Brown"
       ],
       "quantity": 5,
       "rating": 4.5,
       "reviews": 10
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "username": "johndoe",
-      "password": "12",
-      "email": "LHwP4@example.com",
-      "firstName": "John",
-      "lastName": "Doe",
-      "phone": "123-456-7890",
-      "address": "123 Main St"
-    },
-    {
-      "id": "9ee1",
-      "username": "hellobabe1",
-      "password": "123",
-      "firstName": "Tran Dinh",
-      "lastName": "Dan",
-      "email": "trandinhdan@gmail.com",
-      "mobile": "123456789",
-      "address": "day la dia chi ship"
-    }
-  ],
-  "carts": [
-    {
-      "id": "1730189059582",
-      "username": "hellobabe1",
-      "products": [
-        {
-          "id": "1",
-          "name": "Basic T-Shirt",
-          "img": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg",
-          "price": 19.99,
-          "description": "A comfortable cotton t-shirt for everyday wear.",
-          "size": [
-            "S",
-            "M",
-            "L",
-            "XL"
-          ],
-          "color": [
-            "Red",
-            "Blue",
-            "Green"
-          ],
-          "quantity": 100,
-          "rating": 4.5,
-          "reviews": 10
-        },
-        {
-          "id": "2",
-          "name": "Slim Fit Jeans",
-          "img": "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg",
-          "price": 49.99,
-          "description": "Stylish slim fit jeans made from high-quality denim.",
-          "size": [
-            "28",
-            "30",
-            "32",
-            "34",
-            "36"
-          ],
-          "color": [
-            "Black",
-            "Blue"
-          ],
-          "quantity": 50,
-          "rating": 4.5,
-          "reviews": 10
-        },
-        {
-          "id": "3",
-          "name": "Running Shoes",
-          "img": "https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg",
-          "price": 89.99,
-          "description": "Lightweight running shoes with excellent cushioning.",
-          "size": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
-          ],
-          "color": [
-            "White",
-            "Black",
-            "Gray"
-          ],
-          "quantity": 30,
-          "rating": 4.5,
-          "reviews": 10
-        }
-      ]
     }
   ]
 }
