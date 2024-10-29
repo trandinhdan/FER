@@ -71,7 +71,8 @@ const Navbar = () => {
                     }}
                   >
                     {category.name}
-                    <i className="fa fa-angle-right float-right mt-1"></i>
+                    
+                    {category.subcategories.length !== 0 ? <i className="fa fa-angle-right float-right mt-1"></i> : ''}
                   </a>
 
                   {category.subcategories.length !== 0 ? (

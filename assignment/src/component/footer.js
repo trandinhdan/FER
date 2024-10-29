@@ -21,9 +21,6 @@ const Footer = () => {
                     <div className="col-md-6 text-center text-md-left text-secondary">
                         &copy; <a className="text-primary" href="#">Domain</a>. All Rights Reserved.
                     </div>
-                    <div className="col-md-6 text-center text-md-right">
-                        <img className="img-fluid" src="img/payments.png" alt="" />
-                    </div>
                 </div>
             </div>
         </footer>

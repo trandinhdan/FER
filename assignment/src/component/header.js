@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Header = ({ username }) => {
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        window.location.reload();
+    }
     return (
         <div className="container-fluid">
             <div className="row bg-secondary py-1 px-xl-5">
@@ -18,7 +22,7 @@ const Header = ({ username }) => {
                             <div className="btn-group">
                                 <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{username}</button>
                                 <ul className="dropdown-menu dropdown-menu-right">
-                                    <li><button className="dropdown-item" type="button">Logout</button></li>
+                                    <li><button className="dropdown-item" type="button" onClick={handleLogout}>Logout</button></li>
                                 </ul>
                             </div>
                             : <div className="btn-group">
