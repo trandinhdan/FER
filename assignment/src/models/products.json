@@ -18,7 +18,7 @@
                 "Green"
             ],
             "quantity": 100,
-            "rating": 4.5,
+            "rating": 3,
             "reviews": 10
         },
         {
@@ -139,12 +139,7 @@
             "img": "https://example.com/images/wallet1.jpg",
             "price": 29.99,
             "description": "A classic leather wallet with multiple card slots.",
-            "size": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
+            "size": [],
             "color": [
                 "Brown",
                 "Black"
@@ -159,12 +154,7 @@
             "img": "https://example.com/images/backpack1.jpg",
             "price": 59.99,
             "description": "A classic leather backpack with multiple compartments.",
-            "size": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
+            "size": [],
             "color": [
                 "Black",
                 "Brown"
@@ -175,23 +165,21 @@
         },
         {
             "id": "10",
-            "name": "Leather Wallet",
-            "img": "https://example.com/images/wallet2.jpg",
-            "price": 29.99,
-            "description": "A classic leather wallet with multiple card slots.",
+            "name": "Casual Shirt",
+            "img": "https://example.com/images/shirt1.jpg",
+            "price": 24.99,
+            "description": "A light and comfortable shirt perfect for casual wear.",
             "size": [
-                "S",
                 "M",
-                "L",
-                "XL"
+                "L"
             ],
             "color": [
-                "Brown",
-                "Black"
+                "Blue",
+                "White"
             ],
-            "quantity": 20,
-            "rating": 4.5,
-            "reviews": 10
+            "quantity": 40,
+            "rating": 4,
+            "reviews": 25
         },
         {
             "id": "11",
