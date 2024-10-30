@@ -55,3 +55,16 @@ export const updateProductImages = async () => {
   }
 };
 
+
+export const addProduct = async (product) => {
+  try {
+    const response = await axios.post(API_URL, product);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+
+

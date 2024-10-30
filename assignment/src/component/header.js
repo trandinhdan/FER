@@ -22,6 +22,13 @@ const Header = ({ token }) => {
                             <div className="btn-group">
                                 <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">{token.firstName + ' ' + token.lastName}</button>
                                 <ul className="dropdown-menu dropdown-menu-right">
+                                    {token.role === 'admin' ?
+                                        <>
+                                            <li><a className="dropdown-item" type="button" href="/account">Account Management</a></li>
+                                            <li><a className="dropdown-item" type="button" href="/addproduct">Add Product</a></li>
+                                        </>
+
+                                        : ''}
                                     <li><button className="dropdown-item" type="button" onClick={handleLogout}>Logout</button></li>
                                 </ul>
                             </div>

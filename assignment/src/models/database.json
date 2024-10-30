@@ -435,33 +435,6 @@
       "quantity": 1,
       "rating": 4.5,
       "reviews": 10
-    },
-    {
-      "id": "15",
-      "name": "Leather Backpack",
-      "img": "https://example.com/images/backpack4.jpg",
-      "price": 59.99,
-      "description": "A classic leather backpack with multiple compartments.",
-      "productDescription": "Made from high-quality leather, this backpack is perfect for carrying essentials with a touch of sophistication. Features padded shoulder straps for added comfort.",
-      "additionalInformation": {
-        "Material": "Genuine Cowhide Leather",
-        "Care Instructions": "Spot clean with leather cleaner",
-        "Origin": "Made in Argentina",
-        "Capacity": "22 liters"
-      },
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "color": [
-        "Black",
-        "Brown"
-      ],
-      "quantity": 1,
-      "rating": 4.5,
-      "reviews": 10
     }
   ],
   "users": [
@@ -472,6 +445,8 @@
       "email": "LHwP4@example.com",
       "firstName": "John",
       "lastName": "Doe",
+      "dob": "1990-01-01",
+      "gender": "male",
       "phone": "123-456-7890",
       "address": "123 Main St",
       "role": "admin"
@@ -482,10 +457,38 @@
       "password": "123",
       "firstName": "Tran Dinh",
       "lastName": "Dan",
+      "dob": "1990-01-01",
+      "gender": "male",
       "email": "trandinhdan@gmail.com",
       "mobile": "123456789",
       "address": "day la dia chi ship",
       "role": "user"
+    },
+    {
+      "id": "9ee2",
+      "username": "user",
+      "password": "1",
+      "firstName": "Tran Dinh",
+      "lastName": "Dan - user",
+      "dob": "1990-01-01",
+      "gender": "female",
+      "email": "trandinhdan@gmail.com",
+      "mobile": "123456789",
+      "address": "day la dia chi ship",
+      "role": "user"
+    },
+    {
+      "id": "9ee3",
+      "username": "admin",
+      "password": "123",
+      "firstName": "Tran Dinh",
+      "lastName": "Dan - admin",
+      "dob": "1990-01-01",
+      "gender": "female",
+      "email": "trandinhdan@gmail.com",
+      "mobile": "123456789",
+      "address": "day la dia chi ship",
+      "role": "admin"
     }
   ],
   "carts": [

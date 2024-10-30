@@ -7,28 +7,33 @@ import Header from './component/header';
 import Navbar from './component/navbar';
 import Footer from './component/footer';
 
+import Forbidden from './component/forbidden';
+
 import Login from './pages/authentication/LoginPage';
 import Register from './pages/authentication/RegisterPage';
 import Home from './pages/homepage/Home';
 import Checkout from './pages/shopping/checkout';
 import Cart1 from './pages/cart/Cart1';
+import ShowAccount from './pages/Admin/accountManagement/ShowAccount';
+import Addproduct from './pages/Admin/addproduct/Addproduct';
 const App = () => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
 
-  console.log(userData);  
+  // console.log(userData);
 
-  const roleRouter = () => {
-    if (userData) {
-      if (userData.role === "admin") {
-        return <Navigate to="/shop" />;
-      } else {
-        return <Navigate to="/shop" />;
-      }
-    } else {
+  const checkUserRole = (role, component) => {
+    if (!userData) {
       return <Navigate to="/login" />;
     }
+
+    if (userData.role === role) {
+      return component;
+    } else {
+      return <Forbidden />;
+    }
   };
+
 
   return (
     <Router>
@@ -37,6 +42,8 @@ const App = () => {
       <Navbar userData={userData} />
       <div>
         <Routes>
+          <Route path="/account" element={checkUserRole("admin", <ShowAccount />)} />
+          <Route path="/addproduct" element={checkUserRole("admin", <Addproduct />)} />
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={token ? <Shopping /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />

@@ -28,4 +28,14 @@ const checkIfUserExists = async (username) => {
     return response.data;
 };
 
-export { login, regester, listAllUsers };
+const updateUser = async (user) => {
+    const response = await axios.put(`${jsonServerUrl}/users/${user.id}`, user);
+    return response.data;
+};
+
+const takeUser = async (id) => {
+    const response = await axios.get(`${jsonServerUrl}/users/${id}`);
+    return response.data;
+};
+
+export { login, regester, listAllUsers, updateUser, takeUser };
