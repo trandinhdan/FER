@@ -113,24 +113,30 @@ const Navbar = ({ userData }) => {
               <div className="navbar-nav mr-auto py-0">
                 <a href="/" className="nav-item nav-link active">Home</a>
                 <a href="/shop" className="nav-item nav-link">Shop</a>
-                <a href="detail.html" className="nav-item nav-link">Shop Detail</a>
+                <a href="/shopdetail/1" className="nav-item nav-link">Shop Detail</a>
                 <div className="nav-item dropdown">
-                  <a
-                    href="#"
-                    className="nav-link dropdown-toggle"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsPagesDropdownOpen2(!isPagesDropdownOpen2);
-                    }}
+              <a
+                href="#"
+                className="nav-link dropdown-toggle"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsPagesDropdownOpen2(!isPagesDropdownOpen2);
+                }}
+              >
+                Pages <i className="fa fa-angle-down mt-1"></i>
+              </a>
+              <div className={`dropdown-menu bg-primary rounded-0 border-0 m-0 ${isPagesDropdownOpen2 ? 'show' : ''}`}>
+                {dynamicMenu2.map((page, index) => (
+                  <a 
+                    key={index} 
+                    href={page.name === 'Shopping Cart' ? '/cart' : page.url} 
+                    className="dropdown-item"
                   >
-                    Pages <i className="fa fa-angle-down mt-1"></i>
+                    {page.name}
                   </a>
-                  <div className={`dropdown-menu bg-primary rounded-0 border-0 m-0 ${isPagesDropdownOpen2 ? 'show' : ''}`}>
-                    {dynamicMenu2.map((page, index) => (
-                      <a key={index} href={page.url} className="dropdown-item">{page.name}</a>
-                    ))}
-                  </div>
-                </div>
+                ))}
+              </div>
+            </div>
                 <a href="contact.html" className="nav-item nav-link">Contact</a>
               </div>
               <div className="navbar-nav ml-auto py-0 d-none d-lg-block">
