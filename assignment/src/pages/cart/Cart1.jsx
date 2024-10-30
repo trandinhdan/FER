@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { removeFromCart } from '../../services/cartService';
 
 const Cart1 = () => {
     const [cartItems, setCartItems] = useState([]);
     const shippingCost = 10;
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
+    const token = localStorage.getItem("token");
+    const userData = JSON.parse(token);
 
     useEffect(() => {
         const cartData = JSON.parse(localStorage.getItem('cart')) || [];
         setCartItems(cartData);
 
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get('http://localhost:8888/carts?username=' + userData.username);
+                console.log(response.data);
+                setCartItems(response.data[0].products);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
 
-        
+        fetchProducts();
+
     }, []);
 
     console.log(cartItems);
@@ -28,9 +41,10 @@ const Cart1 = () => {
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
 
-    const handleRemove = (id) => {
-        const updatedCart = cartItems.filter(item => item.id !== id);
+    const handleRemove = (item1) => {
+        const updatedCart = cartItems.filter(item => item.id !== item1.id);
         setCartItems(updatedCart);
+        removeFromCart(userData.username, item1);
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
 
@@ -80,7 +94,7 @@ const Cart1 = () => {
                                     </td>
                                     <td className="align-middle">${(item.price * item.quantity).toFixed(2)}</td>
                                     <td className="align-middle">
-                                        <button className="btn btn-sm btn-danger" onClick={() => handleRemove(item.id)}>
+                                        <button className="btn btn-sm btn-danger" onClick={() => handleRemove(item)}>
                                             <i className="fa fa-times"></i>
                                         </button>
                                     </td>

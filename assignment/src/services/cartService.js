@@ -24,4 +24,18 @@ const addToCart = async (username, productId) => {
     }
 };
 
-export { addToCart };
+const removeFromCart = async (username, productId) => {
+    try {
+        const { data: carts } = await axios.get(jsonServerUrl);
+        const cart = carts.find(cart => cart.username === username);
+        if (cart) {
+            cart.products = cart.products.filter(id => id !== productId);
+            await axios.put(`${jsonServerUrl}/${cart.id}`, cart);
+        }
+    } catch (error) {
+        console.error('Error removing product from cart:', error);
+        throw error;
+    }
+};
+
+export { addToCart, removeFromCart };
