@@ -492,36 +492,7 @@
     {
       "id": "1730250199226",
       "username": "hellobabe1",
-      "products": [
-        {
-          "id": "1",
-          "name": "Basic T-Shirt",
-          "img": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg",
-          "price": 19.99,
-          "description": "A comfortable cotton t-shirt for everyday wear.",
-          "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
-          "additionalInformation": {
-            "Material": "100% Organic Cotton",
-            "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
-            "Origin": "Made in the USA",
-            "Fit": "Regular fit"
-          },
-          "size": [
-            "S",
-            "M",
-            "L",
-            "XL"
-          ],
-          "color": [
-            "Red",
-            "Blue",
-            "Green"
-          ],
-          "quantity": 1,
-          "rating": 3,
-          "reviews": 10
-        }
-      ]
+      "products": []
     }
   ]
 }

@@ -137,7 +137,7 @@ const Navbar = ({ userData }) => {
                 ))}
               </div>
             </div>
-                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                <a href="/contact" className="nav-item nav-link">Contact</a>
               </div>
               <div className="navbar-nav ml-auto py-0 d-none d-lg-block">
                 <a href="#" className="btn px-0">
