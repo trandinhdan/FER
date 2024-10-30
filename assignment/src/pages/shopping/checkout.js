@@ -24,7 +24,7 @@ const Checkout = () => {
         products.forEach((product) => {
             total += product.price;
         });
-        return total;
+        return total.toFixed(2);
     };
 
     const Total = () => {
@@ -32,7 +32,7 @@ const Checkout = () => {
         products.forEach((product) => {
             total += product.price;
         });
-        return total + 10;
+        return (total + 10).toFixed(2);
     };
 
 

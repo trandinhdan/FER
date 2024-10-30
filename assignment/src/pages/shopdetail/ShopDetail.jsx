@@ -3,6 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { updateProductImages } from '../../services/productService';
 import RelatedProducts from './RelatedProducts';
+import axios from 'axios';
+import {addToCart} from "../../services/cartService";
 
 const ShopDetail = () => {
     const { id } = useParams();
@@ -11,6 +13,9 @@ const ShopDetail = () => {
     const [quantity, setQuantity] = useState(1);
     const [relatedProducts, setRelatedProducts] = useState([]);
     const [activeTab, setActiveTab] = useState("description");
+
+    const token = localStorage.getItem("token");
+    const userData = JSON.parse(token);
 
     useEffect(() => {
         const fetchProductData = async () => {
@@ -39,6 +44,8 @@ const ShopDetail = () => {
         } else {
             cart.push({ ...product, quantity });
         }
+
+        addToCart(userData.username, product);
 
         localStorage.setItem('cart', JSON.stringify(cart));
         alert("Product added to cart!");

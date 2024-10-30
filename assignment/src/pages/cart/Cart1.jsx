@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Cart1 = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -9,7 +10,12 @@ const Cart1 = () => {
     useEffect(() => {
         const cartData = JSON.parse(localStorage.getItem('cart')) || [];
         setCartItems(cartData);
+
+
+        
     }, []);
+
+    console.log(cartItems);
 
     const handleQuantityChange = (id, amount) => {
         const updatedCart = cartItems.map(item => {
