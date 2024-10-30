@@ -475,19 +475,6 @@
       "email": "trandinhdan@gmail.com",
       "mobile": "123456789",
       "address": "day la dia chi ship",
-      "role": "user"
-    },
-    {
-      "id": "9ee3",
-      "username": "admin",
-      "password": "123",
-      "firstName": "Tran Dinh",
-      "lastName": "Dan - admin",
-      "dob": "1990-01-01",
-      "gender": "female",
-      "email": "trandinhdan@gmail.com",
-      "mobile": "123456789",
-      "address": "day la dia chi ship",
       "role": "admin"
     }
   ],

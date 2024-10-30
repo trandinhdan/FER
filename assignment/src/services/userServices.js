@@ -9,10 +9,10 @@ const login = async (username, password) => {
 
 const regester = async (user) => {
     console.log(user);
-    // if (await checkIfUserExists(user.username)) {
-    //     console.log('User already exists');
-    //     return null;
-    // }
+    if (await checkIfUserExists(user.username)) {
+        console.log('User already exists');
+        return null;
+    }
     const response = await axios.post(`${jsonServerUrl}/users`, user);
     return response.data;
 };
@@ -29,6 +29,7 @@ const checkIfUserExists = async (username) => {
 };
 
 const updateUser = async (user) => {
+    console.log(user);
     const response = await axios.put(`${jsonServerUrl}/users/${user.id}`, user);
     return response.data;
 };
