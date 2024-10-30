@@ -17,7 +17,7 @@ const Login = () => {
             const token = response[0];
             console.log(token);
             localStorage.setItem("token", JSON.stringify(token));
-            // window.location.href = '/home'
+            window.location.href = '/'
         }
         else {
             alert('Invalid username or password')

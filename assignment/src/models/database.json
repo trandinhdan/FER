@@ -7,62 +7,74 @@
         "Women's Dresses",
         "Baby's Dresses"
       ],
-      "image": "img/cat-1.jpg"
+      "image": "img/cat-1.jpg",
+      "id": "7b1c"
     },
     {
       "name": "Shirts",
       "subcategories": [],
-      "image": "img/product-2.jpg"
+      "image": "img/product-2.jpg",
+      "id": "d1f0"
     },
     {
       "name": "Jeans",
       "subcategories": [],
-      "image": "img/jean.jpg"
+      "image": "img/jean.jpg",
+      "id": "ce40"
     },
     {
       "name": "Swimwear",
       "subcategories": [],
-      "image": "img/swimwear.jpg"
+      "image": "img/swimwear.jpg",
+      "id": "8dfc"
     },
     {
       "name": "Sleepwear",
       "subcategories": [],
-      "image": "img/sleepwear.jpg"
+      "image": "img/sleepwear.jpg",
+      "id": "0063"
     },
     {
       "name": "Sportswear",
       "subcategories": [],
-      "image": "img/sportswear.jpg"
+      "image": "img/sportswear.jpg",
+      "id": "aa62"
     },
     {
       "name": "Jumpsuits",
       "subcategories": [],
-      "image": "img/jumpsuits.jpg"
+      "image": "img/jumpsuits.jpg",
+      "id": "2149"
     },
     {
       "name": "Blazers",
       "subcategories": [],
-      "image": "img/blazers.jpg"
+      "image": "img/blazers.jpg",
+      "id": "3330"
     },
     {
       "name": "Jackets",
       "subcategories": [],
-      "image": "img/jackets.jpg"
+      "image": "img/jackets.jpg",
+      "id": "9ff1"
     },
     {
       "name": "Shoes",
       "subcategories": [],
-      "image": "img/cat-3.jpg"
+      "image": "img/cat-3.jpg",
+      "id": "60f7"
     }
   ],
   "pages": [
     {
       "name": "Shopping Cart",
-      "url": "cart.html"
+      "url": "cart.html",
+      "id": "f91b"
     },
     {
       "name": "Checkout",
-      "url": "/checkout"
+      "url": "/checkout",
+      "id": "af21"
     }
   ],
   "products": [
@@ -448,6 +460,27 @@
             "Gray"
           ],
           "quantity": 30,
+          "rating": 4.5,
+          "reviews": 10
+        },
+        {
+          "id": "2",
+          "name": "Slim Fit Jeans",
+          "img": "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg",
+          "price": 49.99,
+          "description": "Stylish slim fit jeans made from high-quality denim.",
+          "size": [
+            "28",
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "color": [
+            "Black",
+            "Blue"
+          ],
+          "quantity": 50,
           "rating": 4.5,
           "reviews": 10
         }

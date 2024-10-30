@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Navbar = () => {
+const Navbar = ({ userData }) => {
   const [isDressesDropdownOpen, setIsDressesDropdownOpen] = useState(false);
   const [isPagesDropdownOpen, setIsPagesDropdownOpen] = useState(false);
   const [isPagesDropdownOpen2, setIsPagesDropdownOpen2] = useState(false);
 
   const [dynamicMenu, setDynamicMenu] = useState([]);
   const [dynamicMenu2, setDynamicMenu2] = useState([]);
+
+  const [numOfCartItems, setNumOfCartItems] = useState(0);
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -17,6 +19,9 @@ const Navbar = () => {
 
         const response2 = await axios.get('http://localhost:8888/pages');
         setDynamicMenu2(response2.data);
+
+        const response3 = await axios.get('http://localhost:8888/carts?username=' + userData.username);
+        setNumOfCartItems(response3.data[0].products.length);
       } catch (error) {
         console.error('Error fetching categories:', error);
       }
@@ -71,7 +76,7 @@ const Navbar = () => {
                     }}
                   >
                     {category.name}
-                    
+
                     {category.subcategories.length !== 0 ? <i className="fa fa-angle-right float-right mt-1"></i> : ''}
                   </a>
 
@@ -135,7 +140,7 @@ const Navbar = () => {
                 </a>
                 <a href="#" className="btn px-0 ml-3">
                   <i className="fas fa-shopping-cart text-primary"></i>
-                  <span className="badge text-secondary border border-secondary rounded-circle" style={badgeStyle}>0</span>
+                  <span className="badge text-secondary border border-secondary rounded-circle" style={badgeStyle}>{numOfCartItems}</span>
                 </a>
               </div>
             </div>

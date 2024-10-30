@@ -18,14 +18,14 @@ const App = () => {
     <Router>
       <Header token={userData} />
 
-      <Navbar />
+      <Navbar userData={userData} />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={token ? <Shopping /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout" element={<Checkout  />} />
         </Routes>
       </div>
       <Footer />
