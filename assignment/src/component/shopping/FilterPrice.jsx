@@ -1,91 +1,56 @@
 import React, { useState } from "react";
 
 const FilterPrice = ({ onPriceFilterChange }) => {
-  // Khởi tạo `selectedPriceRanges` với "All Price" được chọn sẵn
-  const [selectedPriceRanges, setSelectedPriceRanges] = useState(["All Price"]);
+  const [selectedRanges, setSelectedRanges] = useState(["all-price"]);
 
-  const priceRanges = {
-    "all-price": "All Price",
-    "price-1": [0, 100],
-    "price-2": [100, 200],
-    "price-3": [200, 300],
-    "price-4": [300, 400],
-    "price-5": [400, 500],
-  };
+  const priceRanges = [
+    { id: "all-price", label: "All Price", range: [0, Infinity] },
+    { id: "0-100", label: "$0 - $100", range: [0, 100] },
+    { id: "100-200", label: "$100 - $200", range: [100, 200] },
+    { id: "200-300", label: "$200 - $300", range: [200, 300] },
+    { id: "300-400", label: "$300 - $400", range: [300, 400] },
+    { id: "400-500", label: "$400 - $500", range: [400, 500] }
+  ];
 
   const handleCheckboxChange = (event) => {
-    const { id, checked } = event.target;
-    const range = priceRanges[id];
+    const { id } = event.target;
     let updatedRanges;
 
-    if (id === "all-price" && checked) {
-      // Nếu chọn "All Price", bỏ chọn tất cả các mức giá khác
-      updatedRanges = ["All Price"];
-    } else if (id === "all-price" && !checked) {
-      // Nếu bỏ chọn "All Price", để danh sách rỗng
-      updatedRanges = [];
+    if (id === "all-price") {
+      updatedRanges = ["all-price"];
     } else {
-      if (checked) {
-        // Nếu chọn một mức giá cụ thể, bỏ "All Price"
-        updatedRanges = [...selectedPriceRanges.filter((r) => r !== "All Price"), range];
-      } else {
-        updatedRanges = selectedPriceRanges.filter((r) => r !== range);
-      }
+      updatedRanges = selectedRanges.includes(id)
+        ? selectedRanges.filter((range) => range !== id)
+        : [...selectedRanges.filter((range) => range !== "all-price"), id];
     }
 
-    // Nếu không có mục nào được chọn, tự động chọn lại "All Price"
-    if (updatedRanges.length === 0) {
-      updatedRanges = ["All Price"];
-    }
+    setSelectedRanges(updatedRanges);
 
-    setSelectedPriceRanges(updatedRanges);
-    onPriceFilterChange(updatedRanges); // Gửi giá trị mới lên component cha
+    // Tính toán các khoảng giá được chọn dựa trên `id`
+    const selectedPriceRanges = updatedRanges.includes("all-price")
+      ? [[0, Infinity]]
+      : priceRanges
+          .filter((price) => updatedRanges.includes(price.id))
+          .map((price) => price.range);
+
+    onPriceFilterChange(selectedPriceRanges);
   };
 
   return (
-    <React.Fragment>
-      <h5 className="section-title position-relative text-uppercase mb-3">
-        <span className="bg-secondary pr-3">Filter by price</span>
-      </h5>
-      <div className="bg-light p-4 mb-30">
-        <form>
-          {/* Option "All Price" */}
-          <div className="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="all-price"
-              checked={selectedPriceRanges.includes("All Price")}
-              onChange={handleCheckboxChange}
-            />
-            <label className="custom-control-label" htmlFor="all-price">
-              All Price
-            </label>
-          </div>
-
-          {/* Other price ranges */}
-          {Object.keys(priceRanges).map((key) =>
-            key !== "all-price" ? (
-              <div
-                key={key}
-                className="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3"
-              >
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id={key}
-                  checked={selectedPriceRanges.includes(priceRanges[key])}
-                  onChange={handleCheckboxChange}
-                />
-                <label className="custom-control-label" htmlFor={key}>
-                  ${priceRanges[key][0]} - ${priceRanges[key][1]}
-                </label>
-              </div>
-            ) : null
-          )}
-        </form>
-      </div>
-    </React.Fragment>
+    <div>
+      <h5>Filter by Price</h5>
+      {priceRanges.map((price) => (
+        <div key={price.id}>
+          <input
+            type="checkbox"
+            id={price.id}
+            checked={selectedRanges.includes(price.id)}
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor={price.id}>{price.label}</label>
+        </div>
+      ))}
+    </div>
   );
 };
 
