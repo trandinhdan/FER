@@ -473,7 +473,8 @@
       "firstName": "John",
       "lastName": "Doe",
       "phone": "123-456-7890",
-      "address": "123 Main St"
+      "address": "123 Main St",
+      "role": "admin"
     },
     {
       "id": "9ee1",
@@ -483,7 +484,8 @@
       "lastName": "Dan",
       "email": "trandinhdan@gmail.com",
       "mobile": "123456789",
-      "address": "day la dia chi ship"
+      "address": "day la dia chi ship",
+      "role": "user"
     }
   ],
   "carts": [
@@ -517,34 +519,6 @@
           ],
           "quantity": 1,
           "rating": 3,
-          "reviews": 10
-        },
-        {
-          "id": "2",
-          "name": "Slim Fit Jeans",
-          "img": "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg",
-          "price": 49.99,
-          "description": "Stylish slim fit jeans made from high-quality denim.",
-          "productDescription": "These Slim Fit Jeans are tailored with high-quality denim and a touch of stretch to provide flexibility without compromising on the sleek look. They complement all body types and are designed for comfort, style, and durability.",
-          "additionalInformation": {
-            "Material": "98% Cotton, 2% Elastane",
-            "Care Instructions": "Machine wash cold with similar colors, avoid bleach",
-            "Origin": "Imported from Japan",
-            "Fit": "Slim fit"
-          },
-          "size": [
-            "28",
-            "30",
-            "32",
-            "34",
-            "36"
-          ],
-          "color": [
-            "Black",
-            "Blue"
-          ],
-          "quantity": 1,
-          "rating": 4.5,
           "reviews": 10
         }
       ]

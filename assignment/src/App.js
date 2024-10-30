@@ -16,6 +16,8 @@ const App = () => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
 
+  console.log(userData);  
+
   return (
     <Router>
       <Header token={userData} />

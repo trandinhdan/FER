@@ -26,10 +26,12 @@ const addToCart = async (username, productId) => {
 
 const removeFromCart = async (username, productId) => {
     try {
+        console.log(username, productId);
         const { data: carts } = await axios.get(jsonServerUrl);
         const cart = carts.find(cart => cart.username === username);
         if (cart) {
-            cart.products = cart.products.filter(id => id !== productId);
+            cart.products = cart.products.filter(id => id.id !== productId.id);
+            console.log("TESST", productId.id)
             await axios.put(`${jsonServerUrl}/${cart.id}`, cart);
         }
     } catch (error) {
