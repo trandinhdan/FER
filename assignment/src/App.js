@@ -8,6 +8,7 @@ import Navbar from './component/navbar';
 import Footer from './component/footer';
 
 import Forbidden from './component/forbidden';
+import ContactForm from './pages/contact/index';
 
 import Login from './pages/authentication/LoginPage';
 import Register from './pages/authentication/RegisterPage';
@@ -16,6 +17,8 @@ import Checkout from './pages/shopping/checkout';
 import Cart1 from './pages/cart/Cart1';
 import ShowAccount from './pages/Admin/accountManagement/ShowAccount';
 import Addproduct from './pages/Admin/addproduct/Addproduct';
+
+
 const App = () => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
@@ -47,6 +50,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={token ? <Shopping /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<ContactForm />} />
           <Route path="/register" element={<Register />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/shopdetail/:id" element={<ShopDetail />} />
