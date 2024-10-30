@@ -8,7 +8,6 @@ import "./assets/css/style.css";
 import "./assets/css/style.min.css";
 import "./assets/scss/style.scss";
 
-<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -16,8 +15,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 
-=======
->>>>>>> GiaHuy
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 
