@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import ProductItem from "./ProductItem.";
+import ProductItem from "./ProductItem";
+
 const ProductList = ({ products }) => {
   return (
     <React.Fragment>
@@ -9,9 +9,10 @@ const ProductList = ({ products }) => {
           <ProductItem key={product.id} product={product} />
         ))
       ) : (
-        <p>Loading products...</p>
+        <p>No products found.</p>
       )}
     </React.Fragment>
   );
 };
+
 export default ProductList;

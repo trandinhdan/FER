@@ -1,11 +1,11 @@
 {
     "products": [
         {
-            "id": "1",
+            "id": 1,
             "name": "Basic T-Shirt",
             "img": "https://example.com/images/tshirt1.jpg",
-            "price": 19.99,
             "description": "A comfortable cotton t-shirt for everyday wear.",
+<<<<<<< HEAD
             "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
             "additionalInformation": {
               "Material": "100% Organic Cotton",
@@ -19,10 +19,16 @@
                 "L",
                 "XL"
             ],
+=======
+>>>>>>> GiaHuy
             "color": [
                 "Red",
-                "Blue",
-                "Green"
+                "Blue"
+            ],
+            "price": 300,
+            "size": [
+                "M",
+                "L"
             ],
             "quantity": 100,
             "rating": 3,
@@ -32,7 +38,7 @@
             "id": "2",
             "name": "Slim Fit Jeans",
             "img": "https://example.com/images/jeans1.jpg",
-            "price": 49.99,
+            "price": 55.99,
             "description": "Stylish slim fit jeans made from high-quality denim.",
             "productDescription": "These Slim Fit Jeans are tailored with high-quality denim and a touch of stretch to provide flexibility without compromising on the sleek look. They complement all body types and are designed for comfort, style, and durability.",
             "additionalInformation": {
@@ -42,15 +48,11 @@
               "Fit": "Slim fit"
             },
             "size": [
-                "28",
-                "30",
-                "32",
-                "34",
-                "36"
+                "L",
+                "XL"
             ],
             "color": [
-                "Black",
-                "Blue"
+                "White"
             ],
             "quantity": 50,
             "rating": 4.5,
@@ -60,7 +62,7 @@
             "id": "3",
             "name": "Running Shoes",
             "img": "https://example.com/images/shoes1.jpg",
-            "price": 89.99,
+            "price": 95.99,
             "description": "Lightweight running shoes with excellent cushioning.",
             "productDescription": "Engineered for runners, these shoes feature lightweight cushioning and a breathable upper to keep your feet cool and supported. Perfect for both long runs and casual wear, they bring style and comfort to your stride.",
             "additionalInformation": {
@@ -70,16 +72,11 @@
               "Performance": "High impact support"
             },
             "size": [
-                "7",
-                "8",
-                "9",
-                "10",
-                "11"
+                "M"
             ],
             "color": [
                 "White",
-                "Black",
-                "Gray"
+                "Black"
             ],
             "quantity": 30,
             "rating": 4.5,
@@ -100,11 +97,9 @@
             },
             "size": [
                 "M",
-                "L",
-                "XL"
+                "L"
             ],
             "color": [
-                "Black",
                 "Brown"
             ],
             "quantity": 15,
@@ -126,8 +121,7 @@
             },
             "size": [],
             "color": [
-                "Silver",
-                "Gold"
+                "Silver"
             ],
             "quantity": 25,
             "rating": 4.5,
@@ -137,8 +131,9 @@
             "id": "6",
             "name": "Sunglasses",
             "img": "https://example.com/images/sunglasses1.jpg",
-            "price": 59.99,
+            "price": 45.99,
             "description": "Stylish sunglasses with UV protection lenses.",
+<<<<<<< HEAD
             "additionalInformation": {
                 "Material": "Plastic frame, UV-protection lenses",
                 "Care Instructions": "Wipe clean with a soft cloth",
@@ -146,6 +141,9 @@
                 "Lens Type": "Polarized"
               },
             "size": [],
+=======
+            "size": ["S"],
+>>>>>>> GiaHuy
             "color": [
                 "Black",
                 "Brown"
@@ -168,13 +166,11 @@
               "Fit": "Regular fit"
             },
             "size": [
-                "S",
                 "M",
-                "L",
-                "XL"
+                "L"
             ],
             "color": [
-                "Black",
+                "Blue",
                 "White"
             ],
             "quantity": 10,
@@ -185,7 +181,7 @@
             "id": "8",
             "name": "Leather Wallet",
             "img": "https://example.com/images/wallet1.jpg",
-            "price": 29.99,
+            "price": 39.99,
             "description": "A classic leather wallet with multiple card slots.",
             "productDescription": "This leather wallet offers a refined, slim profile with multiple card slots and a durable build. Ideal for those who prefer a minimalist yet functional design.",
             "additionalInformation": {
@@ -196,8 +192,7 @@
             },
             "size": [],
             "color": [
-                "Brown",
-                "Black"
+                "Brown"
             ],
             "quantity": 20,
             "rating": 4.5,
@@ -207,7 +202,7 @@
             "id": "9",
             "name": "Leather Backpack",
             "img": "https://example.com/images/backpack1.jpg",
-            "price": 59.99,
+            "price": 69.99,
             "description": "A classic leather backpack with multiple compartments.",
             "productDescription": "An elegant leather backpack that combines style with functionality. With multiple compartments, it’s perfect for organizing daily essentials and adds a sophisticated touch to your look.",
             "additionalInformation": {
@@ -218,8 +213,7 @@
             },
             "size": [],
             "color": [
-                "Black",
-                "Brown"
+                "Black"
             ],
             "quantity": 5,
             "rating": 4.5,
@@ -229,7 +223,7 @@
             "id": "10",
             "name": "Casual Shirt",
             "img": "https://example.com/images/shirt1.jpg",
-            "price": 24.99,
+            "price": 400,
             "description": "A light and comfortable shirt perfect for casual wear.",
             "productDescription": "This minimalist leather wallet is designed to fit easily into your pocket while holding all essential cards and cash. Durable and elegant, it’s a must-have accessory for everyday use.",
             "additionalInformation": {
@@ -239,16 +233,15 @@
               "Card Slots": "4"
             },
             "size": [
-                "M",
-                "L"
+                "M"
             ],
             "color": [
-                "Blue",
-                "White"
+                "Blue"
             ],
             "quantity": 40,
             "rating": 4,
             "reviews": 25
+<<<<<<< HEAD
         },
         {
             "id": "11",
@@ -384,6 +377,8 @@
             "quantity": 5,
             "rating": 4.5,
             "reviews": 10
+=======
+>>>>>>> GiaHuy
         }
     ]
 }

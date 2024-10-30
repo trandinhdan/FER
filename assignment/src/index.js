@@ -8,6 +8,7 @@ import "./assets/css/style.css";
 import "./assets/css/style.min.css";
 import "./assets/scss/style.scss";
 
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -15,12 +16,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 
+=======
+>>>>>>> GiaHuy
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
