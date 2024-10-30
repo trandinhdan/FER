@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import ToolBar from "./ToolBar";
 import ProductList from "./ProductList";
 import { paginate } from "../../services/paginate";
-import { updateProductImages } from "../../services/productService";
-const ShopProduct = () => {
-  const [products, setProducts] = useState([]);
+const ShopProduct = ({products}) => {
   const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,17 +21,7 @@ const ShopProduct = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
-  useEffect(() => {
-    const loadUpdatedProducts = async () => {
-      try {
-        const updateProducts = await updateProductImages();
-        setProducts(updateProducts);
-      } catch (error) {
-        console.log("Lỗi khi tải sản phẩm", error);
-      }
-    };
-    loadUpdatedProducts();
-  }, []);
+
 
   return (
     <React.Fragment>
