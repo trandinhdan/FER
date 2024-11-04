@@ -6,6 +6,8 @@ const Checkout = () => {
     const userData = JSON.parse(token);
     const [products, setProducts] = useState([]);
 
+    const [shipCost, setShipCost] = useState()
+
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -15,6 +17,7 @@ const Checkout = () => {
             } catch (error) {
                 console.error('Error fetching products:', error);
             }
+            setShipCost(Math.floor(Math.random() * (30 - 15 + 1)) + 15);
         };
         fetchProducts();
     }, []);
@@ -32,8 +35,11 @@ const Checkout = () => {
         products.forEach((product) => {
             total += product.price;
         });
-        return (total + 10).toFixed(2);
+        return (total + shipCost).toFixed(2);
     };
+
+
+
 
 
     return (
@@ -104,7 +110,8 @@ const Checkout = () => {
                             <div className="col-md-6 form-group">
                                 <label>Country</label>
                                 <select className="custom-select">
-                                    <option selected>United States</option>
+                                    <option selected>-- Choose --</option>
+                                    <option>United States</option>
                                     <option>Afghanistan</option>
                                     <option>Albania</option>
                                     <option>Algeria</option>
@@ -137,7 +144,7 @@ const Checkout = () => {
                             </div>
                             <div className="d-flex justify-content-between">
                                 <h6 className="font-weight-medium">Shipping</h6>
-                                <h6 className="font-weight-medium">$10</h6>
+                                <h6 className="font-weight-medium">$ {shipCost}</h6>
                             </div>
                         </div>
                         <div className="pt-2">

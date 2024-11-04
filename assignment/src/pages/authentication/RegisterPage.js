@@ -30,10 +30,9 @@ const Register = () => {
         e.preventDefault()
         const response = await regester(newUser)
         if (response) {
-            // localStorage.setItem('user', JSON.stringify(response))
-            navigate('/')
+            navigate('/login')
         } else {
-            setError('Invalid registration details')
+            setError('Existed username')
         }
     }
 

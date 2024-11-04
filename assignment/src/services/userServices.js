@@ -8,7 +8,7 @@ const login = async (username, password) => {
 };
 
 const regester = async (user) => {
-    console.log(user);
+    // console.log(user);
     if (await checkIfUserExists(user.username)) {
         console.log('User already exists');
         return null;
@@ -23,9 +23,11 @@ const listAllUsers = async () => {
 };
 
 const checkIfUserExists = async (username) => {
-    console.log(username);
     const response = await axios.get(`${jsonServerUrl}/users?username=${username}`);
-    return response.data;
+    if (response.data > 0 || response.data.length > 0){
+        return true;
+    }
+        return false;
 };
 
 const updateUser = async (user) => {
@@ -39,4 +41,9 @@ const takeUser = async (id) => {
     return response.data;
 };
 
-export { login, regester, listAllUsers, updateUser, takeUser };
+const deleteById = async (id) => {
+    const response = await axios.delete(`${jsonServerUrl}/users/${id}`);
+    return response.data;
+}
+
+export { login, regester, listAllUsers, updateUser, takeUser, deleteById };

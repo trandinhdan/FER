@@ -60,6 +60,7 @@ const Addproduct = () => {
         } catch (error) {
             console.error(error);
         }
+        window.location.href = "/shop";
     };
 
     return (

@@ -435,6 +435,56 @@
       "quantity": 1,
       "rating": 4.5,
       "reviews": 10
+    },
+    {
+      "id": "b640",
+      "name": "Quan rach",
+      "img": "",
+      "price": 15,
+      "description": "quan rach cho no, rach cho kia",
+      "category": "Swimwear",
+      "productDescription": "day la dong description thu hai",
+      "additionalInformation": {
+        "Material": "Vai Lanh",
+        "Care Instructions": "Giat nhu binh thuong",
+        "Origin": "Han Quoc"
+      },
+      "size": [
+        "S",
+        "M"
+      ],
+      "color": [
+        "blue",
+        "green"
+      ],
+      "quantity": 15,
+      "rating": "",
+      "reviews": ""
+    },
+    {
+      "id": "4bbb",
+      "name": "Quan rach 1",
+      "img": "",
+      "price": 13,
+      "description": "quan rach cho no, rach cho kia",
+      "category": "Jumpsuits",
+      "productDescription": "day la dong description thu hai",
+      "additionalInformation": {
+        "Material": "Vai Lanh",
+        "Care Instructions": "Giat nhu binh thuong",
+        "Origin": "Han Quoc"
+      },
+      "size": [
+        "S",
+        "M"
+      ],
+      "color": [
+        "red",
+        "blue"
+      ],
+      "quantity": 15,
+      "rating": "",
+      "reviews": ""
     }
   ],
   "users": [
@@ -453,16 +503,16 @@
     },
     {
       "id": "9ee1",
-      "username": "hellobabe1",
-      "password": "123",
+      "username": "admin",
+      "password": "1",
       "firstName": "Tran Dinh",
-      "lastName": "Dan",
+      "lastName": "Dan - admin",
       "dob": "1990-01-01",
       "gender": "male",
       "email": "trandinhdan@gmail.com",
       "mobile": "123456789",
       "address": "day la dia chi ship",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "9ee2",
@@ -475,7 +525,7 @@
       "email": "trandinhdan@gmail.com",
       "mobile": "123456789",
       "address": "day la dia chi ship",
-      "role": "admin"
+      "role": "user"
     }
   ],
   "carts": [
@@ -483,6 +533,96 @@
       "id": "1730250199226",
       "username": "hellobabe1",
       "products": []
+    },
+    {
+      "id": "1730691706737",
+      "username": "admin",
+      "products": [
+        {
+          "id": "1",
+          "name": "Basic T-Shirt",
+          "img": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg",
+          "price": 19.99,
+          "description": "A comfortable cotton t-shirt for everyday wear.",
+          "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
+          "additionalInformation": {
+            "Material": "100% Organic Cotton",
+            "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
+            "Origin": "Made in the USA",
+            "Fit": "Regular fit"
+          },
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "color": [
+            "Red",
+            "Blue",
+            "Green"
+          ],
+          "quantity": 1,
+          "rating": 3,
+          "reviews": 10
+        },
+        {
+          "id": "1",
+          "name": "Basic T-Shirt",
+          "img": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg",
+          "price": 19.99,
+          "description": "A comfortable cotton t-shirt for everyday wear.",
+          "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
+          "additionalInformation": {
+            "Material": "100% Organic Cotton",
+            "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
+            "Origin": "Made in the USA",
+            "Fit": "Regular fit"
+          },
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "color": [
+            "Red",
+            "Blue",
+            "Green"
+          ],
+          "quantity": 1,
+          "rating": 3,
+          "reviews": 10
+        },
+        {
+          "id": "1",
+          "name": "Basic T-Shirt",
+          "img": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg",
+          "price": 19.99,
+          "description": "A comfortable cotton t-shirt for everyday wear.",
+          "productDescription": "A classic Basic T-Shirt crafted from the finest cotton, this shirt offers unmatched breathability and comfort for everyday wear. With a relaxed fit, it’s perfect for layering or as a stand-alone piece for casual outings.",
+          "additionalInformation": {
+            "Material": "100% Organic Cotton",
+            "Care Instructions": "Machine wash cold, tumble dry low, iron on reverse",
+            "Origin": "Made in the USA",
+            "Fit": "Regular fit"
+          },
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "color": [
+            "Red",
+            "Blue",
+            "Green"
+          ],
+          "quantity": 1,
+          "rating": 3,
+          "reviews": 10
+        }
+      ]
     }
   ]
 }

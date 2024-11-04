@@ -17,11 +17,14 @@ import Checkout from './pages/shopping/checkout';
 import Cart1 from './pages/cart/Cart1';
 import ShowAccount from './pages/Admin/accountManagement/ShowAccount';
 import Addproduct from './pages/Admin/addproduct/Addproduct';
+import UpdateProfile from './pages/profile/updateProfile';
 
 
 const App = () => {
   const token = localStorage.getItem("token");
   const userData = JSON.parse(token);
+
+
 
   // console.log(userData);
 
@@ -37,16 +40,16 @@ const App = () => {
     }
   };
 
-
   return (
     <Router>
       <Header token={userData} />
 
-      <Navbar userData={userData} />
+      <Navbar userData={userData}/>
       <div>
         <Routes>
           <Route path="/account" element={checkUserRole("admin", <ShowAccount />)} />
           <Route path="/addproduct" element={checkUserRole("admin", <Addproduct />)} />
+          <Route path="/updateprofile" element={token ? <UpdateProfile userData={userData} /> : <Navigate to="/login" />} />
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={token ? <Shopping /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />

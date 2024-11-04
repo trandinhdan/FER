@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { listAllUsers, updateUser } from "../../../services/userServices";
+import { listAllUsers, updateUser, deleteById } from "../../../services/userServices";
 
 const ShowAccount = () => {
     const [users, setUsers] = useState([]);
@@ -65,6 +65,11 @@ const ShowAccount = () => {
         setFilteredUsers(sortedUsers);
     };
 
+    const resetSort = () => {
+        setFilteredUsers(users);
+    };
+
+    
 
 
     return (
@@ -103,6 +108,7 @@ const ShowAccount = () => {
                             setSearchTerm("");
                             setGenderFilter("");
                             setRoleFilter("");
+                            resetSort();
                         }}
                     >
                         Reset
@@ -149,6 +155,8 @@ const ShowAccount = () => {
                 <thead className="thead-dark">
                     <tr>
                         <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
                         <th>Gender</th>
                         <th>Date of Birth</th>
                         <th>Role</th>
@@ -158,18 +166,20 @@ const ShowAccount = () => {
                     {filteredUsers.map(user => (
                         <tr key={user.id}>
                             <td>{user.username}</td>
-
+                            <td>{user.firstName}</td>
+                            <td>{user.lastName}</td>
                             <td>{user.gender}</td>
                             <td>{user.dob}</td>
                             <td>
-                                <select
-                                    value={user.role}
-                                    onChange={(e) => handleUpdateRole(user, e.target.value)}
+                                <select onChange={(e) => handleUpdateRole(user, e.target.value)}
                                 >
-                                    <option value="admin">Admin</option>
-                                    <option value="user">User</option>
+                                    <option selected={user.role === "admin"} value="admin">Admin</option>
+                                    <option selected={user.role === "user"} value="user">User</option>
                                 </select>
                             </td>
+                            {/* <td>
+                                <button onClick={}> </button>
+                            </td> */}
                         </tr>
                     ))}
                 </tbody>

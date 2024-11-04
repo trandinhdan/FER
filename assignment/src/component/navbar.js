@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Navbar = ({ userData }) => {
+const Navbar = ({ userData}) => {
   const [isDressesDropdownOpen, setIsDressesDropdownOpen] = useState(false);
   const [isPagesDropdownOpen, setIsPagesDropdownOpen] = useState(false);
   const [isPagesDropdownOpen2, setIsPagesDropdownOpen2] = useState(false);
@@ -10,6 +10,7 @@ const Navbar = ({ userData }) => {
   const [dynamicMenu2, setDynamicMenu2] = useState([]);
 
   const [numOfCartItems, setNumOfCartItems] = useState(0);
+
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -29,6 +30,7 @@ const Navbar = ({ userData }) => {
 
     fetchCategories();
   }, []);
+
 
   const categoryButtonStyle = {
     height: '65px',
@@ -140,10 +142,6 @@ const Navbar = ({ userData }) => {
                 <a href="/contact" className="nav-item nav-link">Contact</a>
               </div>
               <div className="navbar-nav ml-auto py-0 d-none d-lg-block">
-                <a href="#" className="btn px-0">
-                  <i className="fas fa-heart text-primary"></i>
-                  <span className="badge text-secondary border border-secondary rounded-circle" style={badgeStyle}>0</span>
-                </a>
                 <a href="#" className="btn px-0 ml-3">
                   <i className="fas fa-shopping-cart text-primary"></i>
                   <span className="badge text-secondary border border-secondary rounded-circle" style={badgeStyle}>{numOfCartItems}</span>

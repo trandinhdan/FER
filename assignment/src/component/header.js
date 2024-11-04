@@ -29,6 +29,7 @@ const Header = ({ token }) => {
                                         </>
 
                                         : ''}
+                                    <li><a className="dropdown-item" type="button" href="/updateprofile">Update Profile</a></li>
                                     <li><button className="dropdown-item" type="button" onClick={handleLogout}>Logout</button></li>
                                 </ul>
                             </div>
